@@ -6,8 +6,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
 interface TestimonialsSectionProps {
-  title: string;
-  description: string;
+
   testimonials: Array<{
     author: TestimonialAuthor;
     text: string;
@@ -17,8 +16,6 @@ interface TestimonialsSectionProps {
 }
 
 export function TestimonialsSection({ 
-  title,
-  description,
   testimonials,
   className 
 }: TestimonialsSectionProps) {
@@ -42,18 +39,23 @@ export function TestimonialsSection({
 
   return (
     <section className={cn(
-      "bg-background text-foreground py-12 sm:py-24 md:py-32 px-0",
+      "bg-background text-foreground py-8 sm:py-20 md:py-28 px-0",
       className
     )}>
       <div className="mx-auto flex max-w-container flex-col items-center gap-4 text-center sm:gap-16">
-        <div className="flex flex-col items-center gap-4 px-4 sm:gap-8">
-          <h2 className="max-w-[720px] text-3xl font-semibold leading-tight sm:text-5xl sm:leading-tight">
-            {title}
-          </h2>
-          <p className="text-md max-w-[600px] font-medium text-muted-foreground sm:text-xl">
-            {description}
-          </p>
-        </div>
+        <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="text-center mb-16"
+              >
+              
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">What Our Clients Have to Say</h2>
+                <p className="mx-auto max-w-2xl text-muted-foreground leading-relaxed">
+                  Comprehensive adventure services designed to give you the most authentic and memorable Himalayan experience.
+                </p>
+              </motion.div>
 
         {/* Scrolling Row */}
         <div className="relative w-full overflow-hidden mt-8">
