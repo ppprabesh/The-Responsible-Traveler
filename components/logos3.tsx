@@ -74,7 +74,7 @@ const Logos3 = ({
   ],
 }: Logos3Props) => {
   return (
-    <section className="py-64">
+    <section className="py-8 md:py-12 lg:py-16 bg-background">
        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -88,13 +88,13 @@ const Logos3 = ({
             Comprehensive adventure partnership designed to give you the most authentic and memorable Himalayan experience.
           </p>
         </motion.div>
-      <div className="pt-10 md:pt-16 lg:pt-20">
+      <div className="pt-10  md:pt-16 lg:pt-20">
         <div className="relative mx-auto flex items-center justify-center lg:max-w-5xl">
           <Carousel
             opts={{ loop: true }}
             plugins={[AutoScroll({ playOnInit: true })]}
           >
-            <CarouselContent className="ml-0">
+            <CarouselContent className="ml-0 ">
               {logos.map((logo) => (
                 <CarouselItem
                   key={logo.id}

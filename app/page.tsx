@@ -11,6 +11,7 @@ import { Testimonials } from "@/components/testimonials-section"
 import { Header } from "@/components/header"
 import { OurPartners } from "@/components/our-partners"
 import { WhatWeOffer } from "@/components/what-we-offer"
+import { TripStyles } from "@/components/trip-styles"
 
 export default function HomePage() {
   return (
@@ -23,10 +24,11 @@ export default function HomePage() {
         <OurPartners/>
         <FeaturedPackages />
         <SecondaryHero />
-        {/* <WhatWeOffer /> */}
+        <WhatWeOffer />
+        <TripStyles/>
         <Testimonials />
         <GallerySection />
-        {/* <CTASection /> */}
+        <CTASection />
       </main>
       <Footer />
     </>
