@@ -17,9 +17,10 @@ export function SecondaryHero() {
     <section className="relative py-32 overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
-        style={{
-          backgroundImage: "url('/nepal-mountain-village-with-prayer-flags-and-tradi.jpg')",
-        }}
+       style={{
+  backgroundImage: "url('/herosection/peak1.jpg')",
+}}
+
       >
         <div className="absolute inset-0 bg-primary/80" />
       </div>

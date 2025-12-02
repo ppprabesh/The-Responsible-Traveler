@@ -50,7 +50,9 @@ export function WhatWeOffer() {
                   Comprehensive adventure services designed to give you the most authentic and memorable Himalayan experience.
                 </p>
               </motion.div>
-      <Carousel1 slides={slideData} />
+              
+                <Carousel1 slides={slideData} />
+      
     </div>
   );
 }
