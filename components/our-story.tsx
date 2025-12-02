@@ -43,7 +43,7 @@ export function OurStory() {
             className="relative"
           >
             <div className="relative h-[500px] rounded-lg overflow-hidden">
-              <Image src="/nepal-mountain-team-trekking-group.jpg" alt="Our team in the mountains" fill className="object-cover" />
+              <Image src="/images/tserkori.jpg" alt="Our team in Tserkori" fill className="object-cover" />
             </div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

@@ -206,7 +206,7 @@ export const NavbarLogo = ({ visible }: { visible: boolean }) => {
         animate={{ scale: visible ? 0.85 : 1 }}
         className="text-base font-semibold text-black dark:text-white whitespace-nowrap"
       >
-        The Responsible Traveller
+        The Responsible Traveler
       </motion.span>
     </motion.a>
   );

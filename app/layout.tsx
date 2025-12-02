@@ -4,9 +4,9 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "The Responsible Traveller | Nepal Trekking & Tours",
+  title: "The Responsible Traveler | Nepal Trekking & Tours",
   description:
-    "Experience authentic Nepal adventures with The Responsible Traveller. Sustainable trekking, climbing expeditions, and cultural tours in the heart of the Himalayas.",
+    "Experience authentic Nepal adventures with The Responsible Traveler. Sustainable trekking, climbing expeditions, and cultural tours in the heart of the Himalayas.",
   keywords: [
     "Nepal trekking",
     "Himalayan tours",

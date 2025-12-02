@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer"
 import { AboutHero } from "@/components/about-hero"
 import { OurStory } from "@/components/our-story"
 import { ValuesSection } from "@/components/values-section"
-import { TeamSection } from "@/components/team-section"
+import { GuidesShowcase } from "@/components/team-section"
 import { CTASection } from "@/components/cta-section"
 
 export const metadata = {
@@ -20,7 +20,7 @@ export default function AboutPage() {
         <AboutHero />
         <OurStory />
         <ValuesSection />
-        <TeamSection />
+        <GuidesShowcase />
         <CTASection />
       </main>
       <Footer />
