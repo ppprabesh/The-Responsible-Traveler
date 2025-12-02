@@ -1,10 +1,8 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 import { AboutHero } from "@/components/about-hero"
-import { OurStory } from "@/components/our-story"
-import { ValuesSection } from "@/components/values-section"
-import { GuidesShowcase } from "@/components/team-section"
 import { CTASection } from "@/components/cta-section"
+import { OurStory } from "@/components/our-story"
+import { GuidesShowcase } from "@/components/team-section"
+import { ValuesSection } from "@/components/values-section"
 
 export const metadata = {
   title: "About Us | The Responsible Traveller",
@@ -15,15 +13,13 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Header />
-      <main className="pt-16">
+      <main>
         <AboutHero />
         <OurStory />
         <ValuesSection />
         <GuidesShowcase />
         <CTASection />
       </main>
-      <Footer />
     </>
   )
 }

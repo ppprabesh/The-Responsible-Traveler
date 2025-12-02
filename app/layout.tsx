@@ -1,7 +1,10 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
+
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "The Responsible Traveler | Nepal Trekking & Tours",
@@ -15,19 +18,27 @@ export const metadata: Metadata = {
     "Annapurna circuit",
     "Nepal adventure",
   ],
-}
+};
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className="font-sans antialiased">
-        {children}
+        {/* Global Header */}
+        <Header />
+
+        {/* Page content */}
+        <main>{children}</main>
+
+        {/* Global Footer */}
+        <Footer />
+
         <Analytics />
       </body>
     </html>
-  )
+  );
 }

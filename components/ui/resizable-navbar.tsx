@@ -10,9 +10,7 @@ import {
 import React, { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
-/* -------------------------------------------------------------------------- */
-/*                                NAVBAR WRAPPER                              */
-/* -------------------------------------------------------------------------- */
+
 export const Navbar = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll({ target: ref, offset: ["start start", "end start"] });
@@ -33,9 +31,6 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-/* -------------------------------------------------------------------------- */
-/*                                 DESKTOP NAV                                 */
-/* -------------------------------------------------------------------------- */
 export const NavBody = ({ children, visible }: { children: React.ReactNode; visible: boolean }) => {
   return (
     <motion.div
@@ -56,9 +51,6 @@ export const NavBody = ({ children, visible }: { children: React.ReactNode; visi
   );
 };
 
-/* -------------------------------------------------------------------------- */
-/*                                 NAV ITEMS                                   */
-/* -------------------------------------------------------------------------- */
 export const NavItems = ({
   items,
 }: {
@@ -67,7 +59,7 @@ export const NavItems = ({
   const pathname = usePathname();
 
   return (
-    <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center gap-4 text-sm font-medium lg:flex dark:text-neutral-200">
+    <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center gap-4 text-md font-large lg:flex dark:text-neutral-200">
       {items.map((item, i) => {
         const active = pathname === item.link;
 
@@ -88,9 +80,6 @@ export const NavItems = ({
   );
 };
 
-/* -------------------------------------------------------------------------- */
-/*                                MOBILE NAV                                   */
-/* -------------------------------------------------------------------------- */
 export const MobileNav = ({
   children,
   isOpen,
@@ -102,7 +91,7 @@ export const MobileNav = ({
 }) => {
   const { scrollY } = useScroll();
 
-  // Close menu on scroll
+
   useMotionValueEvent(scrollY, "change", () => {
     if (isOpen) setIsOpen(false);
   });
@@ -130,9 +119,6 @@ export const MobileNavHeader = ({ children }: { children: React.ReactNode }) => 
   return <div className="flex w-full items-center justify-between px-1">{children}</div>;
 };
 
-/* -------------------------------------------------------------------------- */
-/*                                MOBILE DROPDOWN                              */
-/* -------------------------------------------------------------------------- */
 export const MobileNavMenu = ({
   children,
   isOpen,
@@ -170,9 +156,7 @@ export const MobileNavMenu = ({
   );
 };
 
-/* -------------------------------------------------------------------------- */
-/*                                TOGGLE ICON                                  */
-/* -------------------------------------------------------------------------- */
+
 export const MobileNavToggle = ({
   isOpen,
   onClick,
@@ -187,34 +171,31 @@ export const MobileNavToggle = ({
   );
 };
 
-/* -------------------------------------------------------------------------- */
-/*                                 LOGO                                        */
-/* -------------------------------------------------------------------------- */
+
 export const NavbarLogo = ({ visible }: { visible: boolean }) => {
   return (
     <motion.a
-      href="#"
+      href="/"
       initial={false}
-      animate={{ scale: visible ? 0.8 : 1 }}
       transition={{ type: "spring", stiffness: 200, damping: 30 }}
-      className="relative z-20 mr-4 flex items-center gap-2 px-2"
+      className="relative z-20 mr-4 flex items-center gap-3 px-2"
     >
-      <div className="relative h-14 w-14 sm:h-16 sm:w-16 shrink-0">
-        <img src="/logo/trtlogo.png" alt="logo" className="h-full w-full object-contain" />
+      <div className="relative  h-20 w-20 sm:h-24 sm:w-24 shrink-0">
+        <img
+          src="/logo/trtlogo.png"
+          alt="logo"
+          className="h-full w-full object-cover rounded-full"
+        />
       </div>
-      <motion.span
-        animate={{ scale: visible ? 0.85 : 1 }}
-        className="text-base font-semibold text-black dark:text-white whitespace-nowrap"
-      >
+
+      <span className="text-base font-semibold text-black dark:text-white whitespace-nowrap">
         The Responsible Traveler
-      </motion.span>
+      </span>
     </motion.a>
   );
 };
 
-/* -------------------------------------------------------------------------- */
-/*                                BUTTON COMPONENT                              */
-/* -------------------------------------------------------------------------- */
+
 export const NavbarButton = ({
   children,
   onClick,

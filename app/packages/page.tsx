@@ -1,7 +1,5 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { PackagesHero } from "@/components/packages-hero"
 import { PackagesContent } from "@/components/packages-content"
+import { PackagesHero } from "@/components/packages-hero"
 
 export const metadata = {
   title: "Packages | The Responsible Traveller",
@@ -12,12 +10,10 @@ export const metadata = {
 export default function PackagesPage() {
   return (
     <>
-      <Header />
-      <main className="pt-16">
+      <main >
         <PackagesHero />
         <PackagesContent />
       </main>
-      <Footer />
     </>
   )
 }

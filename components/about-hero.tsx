@@ -4,7 +4,8 @@ import { motion } from "framer-motion"
 
 export function AboutHero() {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -14,6 +15,7 @@ export function AboutHero() {
         <div className="absolute inset-0 bg-foreground/60" />
       </div>
 
+      {/* CONTENT */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -23,6 +25,7 @@ export function AboutHero() {
         >
           Our Story
         </motion.p>
+
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,14 +34,15 @@ export function AboutHero() {
         >
           About Us
         </motion.h1>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mx-auto max-w-2xl text-lg text-primary-foreground/90 leading-relaxed"
         >
-          A passionate team dedicated to sharing the beauty of Nepal while preserving its culture and environment for
-          future generations.
+          A passionate team dedicated to sharing the beauty of Nepal while
+          preserving its culture and environment for future generations.
         </motion.p>
       </div>
     </section>

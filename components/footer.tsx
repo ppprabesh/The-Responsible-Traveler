@@ -14,7 +14,7 @@ const navigation = {
   ],
   company: [
     { name: "About Us", href: "/about" },
-    { name: "Our Team", href: "/about#team" },
+    { name: "Our Team", href: "/about" },
     { name: "Sustainability", href: "/about#sustainability" },
     { name: "Contact", href: "/contact" },
   ],
@@ -63,7 +63,7 @@ export function Footer() {
               </motion.div>
               <div className="flex flex-col">
                 <span className="font-serif text-lg font-bold leading-tight">The Responsible</span>
-                <span className="font-serif text-sm opacity-80 leading-tight">Traveller</span>
+                <span className="font-serif text-sm opacity-80 leading-tight">Traveler</span>
               </div>
             </Link>
             <p className="text-sm opacity-80 leading-relaxed">

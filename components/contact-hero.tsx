@@ -4,16 +4,18 @@ import { motion } from "framer-motion"
 
 export function ContactHero() {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/nepal-mountain-landscape-sunset-peaceful.jpg')",
+          backgroundImage: "url('/images/theladyandtheyak.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-foreground/60" />
       </div>
 
+      {/* CONTENT */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -23,6 +25,7 @@ export function ContactHero() {
         >
           Get In Touch
         </motion.p>
+
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,6 +34,7 @@ export function ContactHero() {
         >
           Contact Us
         </motion.h1>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
