@@ -13,7 +13,6 @@ import { PackageBooking } from "@/components/packages/detail/package-booking"
 import { PackageTrailMap } from "@/components/packages/detail/package-trail-map"
 import { RelatedPackages } from "@/components/packages/detail/related-packages"
 
-// Generate static params for SSG
 export async function generateStaticParams() {
   return packages.map((pkg) => ({
     slug: pkg.id,

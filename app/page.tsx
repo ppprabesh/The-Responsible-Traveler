@@ -21,7 +21,7 @@ export default function HomePage() {
         <FeaturedPackages />
         <SecondaryHero />
         <WhatWeOffer />
-        <TripStyles/>
+        {/* <TripStyles/> */}
         <Testimonials />
         <GallerySection />
         <CTASection />

@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function WhatsAppFloating() {
   return (
     <Link
-      href="https://wa.me/9779800000000" // <-- replace with your number
+      href="https://wa.me/9779841246023" 
       target="_blank"
       rel="noopener noreferrer"
       className="

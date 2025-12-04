@@ -5,11 +5,7 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react"
 import { motion } from "framer-motion"
 
 const contactDetails = [
-  {
-    icon: MapPin,
-    title: "Visit Our Office",
-    details: ["Thamel, Kathmandu", "Nepal 44600"],
-  },
+  
   {
     icon: Phone,
     title: "Call Us",
@@ -20,11 +16,7 @@ const contactDetails = [
     title: "Email Us",
     details: ["info@responsibletraveller.com", "bookings@responsibletraveller.com"],
   },
-  {
-    icon: Clock,
-    title: "Office Hours",
-    details: ["Sun - Fri: 9:00 AM - 6:00 PM", "Saturday: 10:00 AM - 4:00 PM"],
-  },
+ 
 ]
 
 export function ContactInfo() {

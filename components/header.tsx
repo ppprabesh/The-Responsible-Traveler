@@ -6,9 +6,9 @@ import { MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle, Navbar, Nav
 export function Header() {
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "Packages", link: "packages" },
-    { name: "About Us", link: "about" },
-    { name: "Contact Us", link: "contact" },
+    { name: "Packages", link: "/packages" },
+    { name: "About Us", link: "/about" },
+    { name: "Contact Us", link: "/contact" },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,7 +18,6 @@ export function Header() {
       <NavBody visible={false}>
         <NavbarLogo visible={false} />
         <NavItems items={navItems} />
-        <NavbarButton>Book Now</NavbarButton>
       </NavBody>
 
       <MobileNav isOpen={isMobileMenuOpen} setIsOpen={setIsMobileMenuOpen}>
@@ -40,7 +39,6 @@ export function Header() {
               {item.name}
             </a>
           ))}
-          <NavbarButton onClick={() => setIsMobileMenuOpen(false)}>Book Now</NavbarButton>
         </MobileNavMenu>
       </MobileNav>
     </Navbar>

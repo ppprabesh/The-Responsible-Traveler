@@ -34,7 +34,7 @@ export const packages: Package[] = [
     id: "everest-base-camp",
     title: "Everest Base Camp Trek",
     category: "trekking",
-    image: "/everest-base-camp-trek-mountain-view.jpg",
+    image: "/images/ganeshhimal.jpg",
     duration: "14 Days",
     difficulty: "Moderate",
     price: 1850,

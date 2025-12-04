@@ -42,7 +42,7 @@ export const NavBody = ({ children, visible }: { children: React.ReactNode; visi
       }}
       transition={{ type: "spring", stiffness: 180, damping: 40 }}
       className={cn(
-        "relative z-60 mx-auto hidden h-16 w-full max-w-7xl flex-row items-center justify-between " +
+        "relative z-60  mx-auto hidden h-16 w-full max-w-7xl flex-row items-center justify-between " +
           "rounded-full border border-white/20 bg-white/20 px-4 py-1 backdrop-blur-xl overflow-hidden flex-nowrap lg:flex dark:border-white/10 dark:bg-neutral-900/40"
       )}
     >
@@ -59,7 +59,7 @@ export const NavItems = ({
   const pathname = usePathname();
 
   return (
-    <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center gap-4 text-md font-large lg:flex dark:text-neutral-200">
+    <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-end gap-12 text-md pr-20 font-large lg:flex dark:text-neutral-200">
       {items.map((item, i) => {
         const active = pathname === item.link;
 
@@ -189,7 +189,7 @@ export const NavbarLogo = ({ visible }: { visible: boolean }) => {
       </div>
 
       <span className="text-base font-semibold text-black dark:text-white whitespace-nowrap">
-        The Responsible Traveler
+        Nepal Responsible Traveller
       </span>
     </motion.a>
   );

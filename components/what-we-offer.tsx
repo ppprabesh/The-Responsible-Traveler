@@ -34,6 +34,21 @@ export function WhatWeOffer() {
       button: "Explore Package",
       src: "https://images.unsplash.com/photo-1629185752152-fe65698ddee4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
+    {
+      title: "Small and Group Holidays",
+      button: "Explore Package",
+      src: "https://images.unsplash.com/photo-1592285896110-8d88b5b3a5d8?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Individual Tailor Made Trips",
+      button: "Explore Package",
+      src: "https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Bespoke Family Holidays",
+      button: "Explore Package",
+      src: "https://images.unsplash.com/photo-1629185752152-fe65698ddee4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
   ];
   return (
     <div className="relative overflow-hidden w-full h-full py-20">
