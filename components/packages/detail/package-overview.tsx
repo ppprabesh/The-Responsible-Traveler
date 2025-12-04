@@ -20,7 +20,7 @@ export function PackageOverview({ pkg }: PackageOverviewProps) {
   ]
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-2 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-12">
           <motion.div
@@ -53,12 +53,7 @@ export function PackageOverview({ pkg }: PackageOverviewProps) {
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <Card className="bg-card border-border sticky top-24">
               <CardContent className="p-6">
-                <div className="text-center mb-6 pb-6 border-b border-border">
-                  <p className="text-sm text-muted-foreground mb-1">From</p>
-                  <p className="text-4xl font-bold text-primary">${pkg.price.toLocaleString()}</p>
-                  <p className="text-sm text-muted-foreground">per person</p>
-                </div>
-
+                
                 <div className="space-y-4">
                   {details.map((detail, index) => (
                     <div key={index} className="flex items-start gap-3">

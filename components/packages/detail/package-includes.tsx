@@ -20,7 +20,7 @@ export function PackageIncludes({ pkg }: PackageIncludesProps) {
           className="text-center mb-12"
         >
           <p className="text-sm uppercase tracking-widest text-accent mb-3">What's Covered</p>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">Inclusions & Exclusions</h2>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground"><span className="text-green-600">Inclusions</span> & <span className="text-red-600">Exclusions</span></h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -28,15 +28,15 @@ export function PackageIncludes({ pkg }: PackageIncludesProps) {
             <Card className="bg-card border-border h-full">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-green-600">
-                  <Check className="h-5 w-5" />
-                  What's Included
+                  <Check className="h-10 border-4 border-green-600 rounded-full w-10 " />
+                  <h1 className="text-2xl">What's Included</h1>
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   {pkg.includes.map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <Check className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-600 mt-1 shrink-0" />
                       <span className="text-muted-foreground">{item}</span>
                     </li>
                   ))}
@@ -49,8 +49,8 @@ export function PackageIncludes({ pkg }: PackageIncludesProps) {
             <Card className="bg-card border-border h-full">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-red-600">
-                  <X className="h-5 w-5" />
-                  What's Not Included
+                  <X className="h-10 border-4 border-red-600 rounded-full w-10 " />
+                   <h1 className="text-2xl">What's Not Included</h1>
                 </CardTitle>
               </CardHeader>
               <CardContent>
